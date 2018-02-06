@@ -7,12 +7,13 @@
   <title>Bienvenue sur ma première page avec Openclassrooms !</title>
 </head>
 <body>
-  <h1>Hello World ! (2e fois)</h1>
+  <h1>Hello {{ nom }} !</h1>
   <p>
-    Le Hello World est un grand classique en programmation.<br/>
+    Le Hello {{ nom }} est un grand classique en programmation.<br/>
     Il signifie énormément, car cela veut dire que vous avez <br/>
     réussi à exécuter le programme pour accomplir une tâche simple :<br/>
-    afficher ce hello world !
+    afficher ce hello {{ nom }} !
   </p>
+  <a href="/bye">Je dois partir...</a>
 </body>
 </html>

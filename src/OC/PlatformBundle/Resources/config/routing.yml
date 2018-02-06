@@ -1,7 +1,7 @@
-oc_platform_homepage:
-    path:     /
-    defaults: { _controller: OCPlatformBundle:Default:index }
-
 hello_world:
-    path:     /hello-world
-    defaults: { _controller: OCPlatformBundle:Advert:index }
+  path:     /hello-world
+  defaults: { _controller: OCPlatformBundle:Advert:index }
+
+bye_bye:
+  path:     /bye
+  defaults:  {_controller: OCPlatformBundle:Advert:bye }
