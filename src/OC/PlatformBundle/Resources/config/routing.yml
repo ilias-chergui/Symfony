@@ -1,7 +1,31 @@
-hello_world:
-  path:     /hello-world
-  defaults: { _controller: OCPlatformBundle:Advert:index }
+# hello_world:
+#   path:     /hello-world
+#   defaults: { _controller: OCPlatformBundle:Advert:index }
+#
+# bye_bye:
+#   path:     /bye
+#   defaults:  {_controller: OCPlatformBundle:Advert:bye }
 
-bye_bye:
-  path:     /bye
-  defaults:  {_controller: OCPlatformBundle:Advert:bye }
+oc_platfrorm_home:
+  path:          /platform
+  defaults:
+    _controller: OCPlatformBundle:Advert:index
+
+oc_platfrorm_view:
+  path:          /platform/advert/{id}
+  defaults:
+    _controller: OCPlatformBundle:Advert:view
+
+oc_platfrorm_view_slug:
+  path:          /platform/{year}/{slug}.{format}
+  defaults:
+    _controller: OCPlatformBundle:Advert:viewSlug
+    format:      html
+  requirements:
+    year:        \d{4}
+    format:      html|xml|jenesaispasquelformat
+
+oc_platfrorm_add:
+  path:          /platform/add
+  defaults:
+    _controller: OCPlatformBundle:Advert:add
